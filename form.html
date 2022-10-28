@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <div id="contact-form">
+      <div>
+        <h1>Portfolio Builder</h1>
+        <h4>Enter your details</h4>
+      </div>
+
+      <form method="POST" action="server.php">
+        <div>
+          <label for="name">
+            <span class="required">Name: *</span>
+            <input type="text" id="name" name="name" />
+          </label>
+        </div>
+        <div>
+          <label for="email">
+            <span class="required">Email: *</span>
+            <input type="text" id="email" name="email" />
+          </label>
+        </div>
+        <div>
+          <label for="phoneno">
+            <span class="required">Phone number: *</span>
+            <input type="text" id="phoneno" name="phoneno" />
+          </label>
+        </div>
+        <div>
+          <label for="url">
+            <span class="required">Profile URL: *</span>
+            <input type="text" id="url" name="url" />
+          </label>
+        </div>
+        <div>
+          <label for="address">
+            <span class="required">Address: *</span>
+            <input type="text" id="address" name="address" />
+          </label>
+        </div>
+        <div>
+          <label for="perc12">
+            <span class="required">12th percentage: *</span>
+            <input type="text" id="perc12" name="perc12" />
+          </label>
+        </div>
+        <div>
+          <label for="perc10">
+            <span class="required">10th Percentage: *</span>
+            <input type="text" id="perc10" name="perc10" />
+          </label>
+        </div>
+        <div>
+          <label for="cgpa">
+            <span class="required">CGPA: *</span>
+            <input type="text" id="cgpa" name="cgpa" />
+          </label>
+        </div>
+        <input type="submit" name="send" value="send" />
+      </form>
+    </div>
+  </body>
+</html>

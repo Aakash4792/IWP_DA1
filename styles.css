@@ -1,0 +1,505 @@
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Assistant', sans-serif;
+sub-head : 
+font-family: 'Prata', serif;
+black : rgb(50, 54, 51);
+ */
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* animations */
+
+
+/* ------------------------------------------ */
+
+body,html{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+header{
+    height: auto;
+    background-image: url('images/head.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 20px;
+    padding-left: 10px;
+    margin-left: -10px;
+}
+ .navcontainer{
+     max-width: 1152px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+ }
+
+ .navbar{
+     list-style-type: none;
+     display: flex;
+ }
+ .navbar li{
+     margin : 20px;
+     
+ }
+ .navbar a{
+     text-decoration: none;
+     color: white;
+     padding: 10px;
+     font-family: 'Assistant', sans-serif;
+     text-transform: uppercase;
+ }
+
+ .navbar a:hover{
+     border-bottom: 1px solid white;
+ }
+#nowrap{
+    white-space: nowrap;
+}
+ .intro{
+     /* background-color: black; */
+     height: 80vh;
+     color: white;
+     display: flex;
+     flex-wrap: wrap;
+ }
+.maintext{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5rem;
+}
+.subtext{
+    font-family: 'Assistant', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    overflow: hidden;
+    width: 24em;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.5em;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.type-writer{
+    animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
+.wisdom-well{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.wisdom-well > div {
+    margin : 1rem;
+}
+.wisdom-well .title{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 6rem;
+}
+.wisdom-well .quote-container{
+    font-family: 'Courgette', cursive;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+.wisdom-well .quote{
+    text-align: justify;
+}
+.wisdom-well .by{
+    text-align: right;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box i{
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.aboutsection{
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+}
+.aboutsection .abouthead{
+    width: 100%;
+    /* background-color: blue; */
+    margin-bottom: 30px;
+}
+.aboutsection .abouthead .abtborder{
+    border-bottom: 3px solid rgb(50, 54, 51);
+}
+
+.aboutsection .abouthead .abtborder h1{
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 3.1rem;
+    color: rgb(50, 54, 51);
+    padding: 30px;
+}
+
+.aboutsection .myintro{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.aboutsection .myintro .abttext{
+    width: 60%;
+    /* border: 2px solid orange; */
+    height: auto;
+}
+.aboutsection .myintro .abttext p{
+    margin: 18% auto;
+    text-align: justify;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(50, 54, 51);
+    font-weight: bold;
+    line-height: 30px;
+}
+.aboutsection .myintro .abtimage{
+    width: 40%;
+    overflow: hidden;
+    /* border: 2px solid green; */
+    height: auto;
+}
+.aboutsection .myintro .abtimage img{
+    height: 250px;
+    width: 210px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+/*------------------------------------------------------------------*/
+.aboutsection .myinterests{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.aboutsection .myinterests .glasses{
+    width: 40%;
+    /* border: 2px solid orange; */
+    height: auto;
+}
+.aboutsection .myinterests .glasses img{
+    height: 300px;
+    width: 260px;
+    margin-left: 10%;
+}
+.aboutsection .myinterests .text p{
+    text-align: justify;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(50, 54, 51);
+    margin: 18% auto;
+    line-height: 30px;
+    font-weight: bold;
+}
+.aboutsection .myinterests .text{
+    width: 60%;
+    overflow: hidden;
+    /* border: 2px solid green; */
+    height: auto;
+}
+.myworks{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    background-color: rgb(50, 54, 51);;
+}
+.myworks .myworks-header{
+    width: 100%;
+    /* background-color: blue; */
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    overflow: hidden;
+    color: white;
+    font-weight: 100;
+    padding-top: 40px;
+}
+.myworks .container{
+    display: flex;
+    flex-wrap: wrap;
+    width : auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.myworks .container > img{
+    width: 280px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    margin: 4px;
+    border-radius: 6%;
+}
+
+.myworks .container img:hover{
+    transform: scale(1.28);
+    margin: 43px;
+}
+
+.myskills{
+    width: 100%;
+    height:auto;
+}
+
+.myskills .myskills-header{
+    width:100%;
+    text-align: center;
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+    border-bottom: 2px solid rgb(50, 54, 51);;
+    padding-bottom: 20px;
+    overflow: hidden;
+    color: rgb(50, 54, 51);;
+    font-weight: 100;
+    padding-top: 40px;
+}
+
+.myskills .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.myskills .card{
+    height: 450px;
+    width: 300px;
+    margin: 13px;
+    border-radius: 10px;
+    background-color: rgb(50, 54, 51);
+    box-shadow: 3px 3px 10px 2px #888888;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.myskills .icon{
+    position: absolute;
+    font-size: 11rem;
+    top: 20%;
+    left: 30%;
+    color: white;
+}
+
+#cplusplus{
+    top: 23%;
+    left: 17%;
+    font-size: 9.7rem;
+}
+
+#python{
+    left: 25.7%;
+}
+
+#js{
+    left: 25%;
+}
+
+.myskills .card-header{
+    margin-top: 100%;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: lighter;
+}
+#two h2{
+    padding-left: 10px;
+}
+#three h2{
+    padding-left: 13px;
+}
+#four h2{
+    text-align: center;
+}
+#five h2{
+    padding-left: 8px;
+}
+#four{
+    position: relative;
+}
+#four i{
+    position: absolute;
+    top : 100px;
+    left : 85px;
+}
+
+.myskills .card:hover{
+    /* <!--animation--> */
+    transform: translateY(-30px);
+    margin-top: 30px;
+}
+
+.end{
+    width: 100%;
+    height: auto;
+    background-color: rgb(50, 54, 51);
+    margin-top: 50px;
+}
+
+.end > .end-text{
+    width: 100%;
+    /* background-color: blue; */
+    padding: 50px;
+}
+
+.end > .end-text h3{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: lighter;
+    line-height: 60px;
+}
+
+.end .social-media-handles{
+    display: flex;
+    /* background-color: blueviolet; */
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    
+}
+
+.end .links{
+    font-size: 23px;
+}
+
+.end a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Assistant', sans-serif;
+}
+@media screen and (max-width:1200px){
+    .aboutsection .myintro,.aboutsection .myinterests{
+        width: 100%;
+    }
+    .aboutsection .myintro p {
+        padding-left: 120px;
+    }
+    .aboutsection .myinterests p{
+        padding-right: 120px;
+    }
+    .aboutsection .myinterests .glasses{
+        padding-left: 90px;
+    }
+    /* <!-----------------------------------------------------> */
+}
+@media screen and (max-width:929px){
+    .aboutsection .myintro .abttext{
+        width: 100%;
+        order: 2;
+    }
+    .aboutsection .myintro .abttext p{
+        padding: 60px 80px;
+        margin: 0;
+    }
+    .aboutsection .myintro .abtimage{
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .aboutsection .myintro .abtimage img{
+        margin-left: 2px;
+    }
+    /* <!--------------------------------------------> */
+    .aboutsection .myinterests .text{
+        width: 100%;
+        order: 2;
+    }
+    .aboutsection .myinterests .text p{
+        padding: 60px 80px;
+        margin: 0;
+    }
+    .aboutsection .myinterests .glasses{
+        width: 100%;
+        order: 1;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        
+    }
+    .aboutsection .myinterests .glasses img{
+        margin-left: 0;
+    }
+
+    .end > .end-text h3{
+        font-size: 1rem;
+    }
+    .end .social-media-handles{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .social-media-handles > div {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:495px){
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+    header{
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    .wisdom-well .title{
+        font-size: 3.5rem;
+    }
+    .subtext{
+        font-family: 'Assistant', sans-serif;
+        font-size: 15px;
+        padding-top: 10px;
+        overflow: hidden;
+        width: 24em;
+        border-right: 2px solid white;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.5em;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+    .myskills .container>div {
+        text-align: center;
+    }
+}
